@@ -4,9 +4,9 @@
 
 本系列文章记录了使用 Rust 编程语言编写一个小型操作系统的详细过程。每篇文章包含所需所有所需代码和相关知识点讲解。
 
-- [GitHub](https://github.com/LearningOS/rcore_step_by_step)
+- [GitHub（代码）](https://github.com/LearningOS/rcore_step_by_step)
 
-- [GitBook](https://xy-plus.gitbook.io/rcore-step-by-step)
+- [GitBook（文档）](https://xy-plus.gitbook.io/rcore-step-by-step)
 
 - [知乎专栏](https://zhuanlan.zhihu.com/c_1086573713289347072)
 
@@ -16,11 +16,10 @@
 
 在工作目录下创建 **Makefile** ：
 
-````Makefile
+```Makefile
 docker:
 	sudo docker run -it --mount type=bind,source=$(shell pwd)/..,destination=/mnt panqinglin/rust_riscv bash
-    ```
-````
+```
 
 进入 docker 后，执行 `cd mnt` ，即可看见工作目录，然后就可以开始写代码啦！
 
