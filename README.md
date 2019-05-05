@@ -10,26 +10,18 @@
 
 - [知乎专栏](https://zhuanlan.zhihu.com/c_1086573713289347072)
 
-## 目录
+## 如何使用
 
-- [1. 独立式可执行程序](report/1.%20独立式可执行程序.md)
+为了方便起见，建议使用 [docker](http://www.runoob.com/docker/docker-tutorial.html) ，可以省去配置环境的功夫。
 
-- [2. 最小化内核](report/2.%20最小化内核.md)
+在工作目录下创建 **Makefile** ：
 
-- [3. 格式化输出](report/3.%20格式化输出.md)
+````Makefile
+docker:
+	sudo docker run -it --mount type=bind,source=$(shell pwd)/..,destination=/mnt panqinglin/rust_riscv bash
+    ```
+````
 
-- [4. Trap](report/4.%20Trap.md)
+进入 docker 后，执行 `cd mnt` ，即可看见工作目录，然后就可以开始写代码啦！
 
-- [4-1. 中断跳转](report/4-1.%20中断跳转.md)
-
-- [5. 时钟中断](report/5.%20时钟中断.md)
-
-- [6. 页表简介](report/6.%20页表简介.md)
-
-- [7. 内存分配](report/7.%20内存分配.md)
-
-- [8. 创建页表](report/8.%20创建页表.md)
-
-- [9. 内核线程](report/9.%20内核线程.md)
-
-- [10. 线程调度](report/10.%20线程调度.md)
+> 正在打 tag 预计 2019.5.5 晚上 12 点前打完
