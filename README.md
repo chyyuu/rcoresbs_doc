@@ -23,4 +23,4 @@ docker:
 
 进入 docker 后，执行 `cd mnt` ，即可看见工作目录，然后就可以开始写代码啦！
 
-> 正在打 tag 预计 2019.5.6 晚上 12 点前打完
+> 每一章的的源代码可以在 [GitHub](https://github.com/LearningOS/rcore_step_by_step) 的 commit 中找到， commit 号于每一篇文章的开头给出
